@@ -1,0 +1,9 @@
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\bin\Debug\netcoreapp2.1\PCBuilder.Models.deps.json
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\bin\Debug\netcoreapp2.1\PCBuilder.Models.dll
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.csproj.CoreCompileInputs.cache
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.AssemblyInfoInputs.cache
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.AssemblyInfo.cs
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\bin\Debug\netcoreapp2.1\PCBuilder.Models.pdb
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.dll
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.pdb
+C:\Users\Kristiyan\Desktop\PCBuilder\PCBuilder\PCBuilder.Models\obj\Debug\netcoreapp2.1\PCBuilder.Models.csprojAssemblyReference.cache
