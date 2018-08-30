@@ -1,0 +1,71 @@
+﻿@model PCBuilder.Common.Models.BindingModels.MemoryBindingModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @(TempData["Error"])
+    </div>
+}
+
+<h2>Create</h2>
+
+<h4>Memory</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Manufacturer" class="control-label"></label>
+                <input asp-for="Manufacturer" class="form-control" />
+                <span asp-validation-for="Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModelName" class="control-label"></label>
+                <input asp-for="ModelName" class="form-control" />
+                <span asp-validation-for="ModelName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" placeholder="GB" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socket" class="control-label"></label>
+                <input asp-for="Socket" class="form-control" />
+                <span asp-validation-for="Socket" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Frequency" class="control-label"></label>
+                <input asp-for="Frequency" class="form-control" placeholder="MHz" />
+                <span asp-validation-for="Frequency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModulesType" class="control-label"></label>
+                <input asp-for="ModulesType" class="form-control" />
+                <span asp-validation-for="ModulesType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" placeholder="$" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+                <a asp-action="Index" asp-controller="Memory" asp-area="" class="btn btn-default">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

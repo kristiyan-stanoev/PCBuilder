@@ -1,0 +1,22 @@
+﻿@page
+@model PCBuilder.Web.Areas.Admin.Pages.Parts.CreateModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Choose a part to create</h2>
+
+<div class="list-group">
+    <a asp-area="Admin" asp-controller="Cases" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Case</a>
+    <a asp-area="Admin" asp-page="/GraphicsCards/Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Graphics card</a>
+    <a asp-area="Admin" asp-controller="Processors" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Processor</a>
+    <a asp-area="Admin" asp-controller="Motherboards" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Motherboard</a>
+    <a asp-area="Admin" asp-controller="Memory" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Memory</a>
+    <a asp-area="Admin" asp-controller="PowerSupplies" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Power supply</a>
+    <a asp-area="Admin" asp-controller="HardDiskDrives" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Hard disk drive</a>
+    <a asp-area="Admin" asp-controller="SolidStateDrives" asp-action="Create" class="list-group-item list-group-item-action list-group-item-heading list-group-item-success" style="color:black">Solid state drive</a>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Home" asp-area="" class="btn btn-default">Back to Home</a>
+</div>
+

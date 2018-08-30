@@ -1,0 +1,93 @@
+﻿@page
+@model PCBuilder.Web.Areas.Admin.Pages.GraphicsCards.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @(TempData["Error"])
+    </div>
+}   
+
+<h2>Create</h2>
+
+<h4>GraphicsCard</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.Manufacturer" class="control-label"></label>
+                <input asp-for="GraphicsCard.Manufacturer" class="form-control" />
+                <span asp-validation-for="GraphicsCard.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.ModelName" class="control-label"></label>
+                <input asp-for="GraphicsCard.ModelName" class="form-control" />
+                <span asp-validation-for="GraphicsCard.ModelName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.Architecture" class="control-label"></label>
+                <input asp-for="GraphicsCard.Architecture" class="form-control" />
+                <span asp-validation-for="GraphicsCard.Architecture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.Socket" class="control-label"></label>
+                <input asp-for="GraphicsCard.Socket" class="form-control" />
+                <span asp-validation-for="GraphicsCard.Socket" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.Pipelines" class="control-label"></label>
+                <input asp-for="GraphicsCard.Pipelines" class="form-control" />
+                <span asp-validation-for="GraphicsCard.Pipelines" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.CoreSpeed" class="control-label"></label>
+                <input asp-for="GraphicsCard.CoreSpeed" class="form-control" placeholder="MHz" />
+                <span asp-validation-for="GraphicsCard.CoreSpeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.MemorySpeed" class="control-label"></label>
+                <input asp-for="GraphicsCard.MemorySpeed" class="form-control" placeholder="MHz" />
+                <span asp-validation-for="GraphicsCard.MemorySpeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.MemoryType" class="control-label"></label>
+                <input asp-for="GraphicsCard.MemoryType" class="form-control" />
+                <span asp-validation-for="GraphicsCard.MemoryType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.MemoryAmount" class="control-label"></label>
+                <input asp-for="GraphicsCard.MemoryAmount" class="form-control" placeholder="GB" />
+                <span asp-validation-for="GraphicsCard.MemoryAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.MaxPower" class="control-label"></label>
+                <input asp-for="GraphicsCard.MaxPower" class="form-control" placeholder="W" />
+                <span asp-validation-for="GraphicsCard.MaxPower" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.DirectX" class="control-label"></label>
+                <input asp-for="GraphicsCard.DirectX" class="form-control" />
+                <span asp-validation-for="GraphicsCard.DirectX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GraphicsCard.Price" class="control-label"></label>
+                <input asp-for="GraphicsCard.Price" class="form-control"  placeholder="$"/>
+                <span asp-validation-for="GraphicsCard.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success" />
+                <a asp-page="Index" asp-area="" class="btn btn-default">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

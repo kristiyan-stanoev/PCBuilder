@@ -1,0 +1,64 @@
+﻿@model PCBuilder.Common.Models.ViewModels.SolidStateDriveViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SolidStateDrive</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModelName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MemoryCapacity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MemoryCapacity) GB
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReadSpeed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReadSpeed) MB/s
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WriteSpeed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WriteSpeed) MB/s
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Interface)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Interface)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)$
+        </dd>
+    </dl>
+    <div style="margin-left:110px">
+        <form asp-action="Delete">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            <a asp-action="Index" asp-controller="SolidStateDrives" asp-area="" class="btn btn-default">Back to List</a>
+        </form>
+    </div>
+
+</div>

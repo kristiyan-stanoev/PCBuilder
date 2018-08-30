@@ -1,0 +1,75 @@
+﻿@model PCBuilder.Common.Models.BindingModels.MotherboardBindingModel
+@{
+    ViewData["Title"] = "Motherboard";
+}
+
+<div class="form-group">
+        <label asp-for="Manufacturer" class="control-label"></label>
+        <input asp-for="Manufacturer" class="form-control" />
+        <span asp-validation-for="Manufacturer" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ModelName" class="control-label"></label>
+        <input asp-for="ModelName" class="form-control" />
+        <span asp-validation-for="ModelName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ProcessorSocketNumber" class="control-label"></label>
+        <input asp-for="ProcessorSocketNumber" class="form-control" />
+        <span asp-validation-for="ProcessorSocketNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GraphicsCardSocketNumber" class="control-label"></label>
+        <input asp-for="GraphicsCardSocketNumber" class="form-control" />
+        <span asp-validation-for="GraphicsCardSocketNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Chipset" class="control-label"></label>
+        <input asp-for="Chipset" class="form-control" />
+        <span asp-validation-for="Chipset" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MemoryType" class="control-label"></label>
+        <input asp-for="MemoryType" class="form-control" />
+        <span asp-validation-for="MemoryType" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MemorySocketNumber" class="control-label"></label>
+        <input asp-for="MemorySocketNumber" class="form-control" />
+        <span asp-validation-for="MemorySocketNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaxMemory" class="control-label"></label>
+        <input asp-for="MaxMemory" class="form-control" placeholder="GB" />
+        <span asp-validation-for="MaxMemory" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NumberOfMemorySlots" class="control-label"></label>
+        <input asp-for="NumberOfMemorySlots" class="form-control" />
+        <span asp-validation-for="NumberOfMemorySlots" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PowerConnector" class="control-label"></label>
+        <input asp-for="PowerConnector" class="form-control" />
+        <span asp-validation-for="PowerConnector" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="HDDInterface" class="control-label"></label>
+        <input asp-for="HDDInterface" class="form-control" />
+        <span asp-validation-for="HDDInterface" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SSDInterface" class="control-label"></label>
+        <input asp-for="SSDInterface" class="form-control" />
+        <span asp-validation-for="SSDInterface" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FormFactor" class="control-label"></label>
+        <input asp-for="FormFactor" class="form-control" />
+        <span asp-validation-for="FormFactor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" placeholder="$" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
